@@ -1,0 +1,31 @@
+.all-data-page {
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(to right, #eef2ff, #e0e7ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-data-box {
+  width: 380px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.all-data-box h2 {
+  margin-bottom: 20px;
+  color: #2a3f8f;
+}
+
+.data-row p {
+  margin: 6px 0;
+}
+
+.data-row hr {
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}

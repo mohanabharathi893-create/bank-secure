@@ -1,0 +1,116 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* ===== NAVBAR ===== */
+.header-bar {
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #000428, #004e92);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-link,
+.logout-btn {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-link:hover,
+.logout-btn:hover {
+  color: #00c6ff;
+  transform: scale(1.08);
+}
+
+.nav-disabled {
+  color: #aaa;
+}
+
+/* ===== FULL SCREEN BACKGROUND ===== */
+.dashboard-container {
+  position: relative;
+  height: calc(100vh - 70px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: zoomBackground 18s ease-in-out infinite alternate;
+  color: white;
+}
+
+/* ===== DARK OVERLAY ===== */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ===== CONTENT ABOVE OVERLAY ===== */
+.dashboard-container h2,
+.user-info {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== USER CARD ===== */
+.user-info {
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.user-info p {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 6px;
+}
+
+/* ===== SMOOTH ZOOM ===== */
+@keyframes zoomBackground {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove old body background */
+body {
+  margin: 0;
+}
+
+/* ===== FULL PAGE BACKGROUND IMAGE ===== */
+.deposit-background {
+  height: 100vh;              /* Full screen height */
+  width: 100%;
+  background-size: cover;     /* Image fully cover page */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== CARD ===== */
+.page {
+  max-width: 400px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.page h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #1e3c72;
+}
+
+.page input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.page input:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+.page button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page button:hover {
+  transform: scale(1.05);
+}
